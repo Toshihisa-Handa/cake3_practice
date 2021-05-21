@@ -8,9 +8,9 @@
 </head>
 <body>
 
-<h1><?php echo $form_data['name']; ?></h1>
-<p><?php echo $form_data['email']; ?></p>
-<p><?php echo $form_data['age']; ?></p>
+<h1><?php echo h($form_data['name']); ?></h1>
+<p><?php echo h($form_data['email']); ?></p>
+<p><?php echo h($form_data['age']); ?></p>
 
 
 

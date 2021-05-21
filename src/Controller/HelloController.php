@@ -51,6 +51,21 @@ class HelloController extends AppController
             'email' => 'hoge@com.jp'
         ];
         $this->set('values', $values);
+
+
+if($this->request->isPost()){
+    $form2_data = [
+        "name" => $this->request->data['form2.name'],
+        "email" => $this->request->data['form2.email'],
+        "age" => $this->request->data['form2.age'],
+    ];
+    $this->set('form2_data',$form2_data);
+}else{
+    $this->set('form2_data',[]);
+}
+
+
+
     }
 
 
